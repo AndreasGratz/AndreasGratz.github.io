@@ -1,0 +1,852 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Home Andreas Gratz</title>
+    <style type="text/css">
+    	@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&display=swap');
+    	@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+    	@import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+    	@media screen and (max-width: 1300px) {
+    		.slideshow-container h2 {
+    			font-size: 20px;
+    		}
+    	}
+    	@media screen and (max-width: 1100px) {
+    		.slideshow-container h2 {
+    			font-size: 18px;
+    		}
+    		#div_3 p {
+    			padding-bottom: 20px;
+    		}
+    	}
+    	@media screen and (max-width: 970px) {
+    		.slideshow-container h2 {
+    			font-size: 16px;
+    		}
+    		#div_3 p {
+    			font-size: 21px;
+    		}
+    		#div_3 h1 {
+    			font-size: 40px;
+    		}
+    	}
+    	@media screen and (max-width: 830px) {
+    		.slideshow-container h2 {
+    			font-size: 15px;
+    		}
+    		.slideshow-container h2 ul {
+    			padding-left: 0;
+    		}
+    		#heading_1, #heading_2, #heading_3 {
+    			font-size: 25px;
+    		}
+    		#div_3 p {
+    			font-size: 18px;
+    			padding-bottom: 32px;
+    		}
+    		#div_3 h1 {
+    			font-size: 33px;
+    		}
+    	}
+    	@media screen and (min-width: 700px) {
+    		.no_abbreviate {
+    			display: inline-block;
+    		}
+    		.abbreviate {
+    			display: none;
+    		}
+    		#I_manage_2 {
+    			display: none;
+    		}
+    		#I_manage_1 {
+    			display: inline-block;
+    		}
+    	}
+    	@media screen and (max-width: 700px) {
+    		.slideshow-container h2 {
+    			font-size: 12px;
+    		}
+    		.slideshow-container h1 {
+    			font-size: 25px;
+    		}
+    		.slideshow-container h3 {
+    			font-size: 16px;
+    		}
+    		.slideshow-container h4 {
+    			font-size: 9px;
+    		}
+    		.no_abbreviate {
+    			display: none;
+    		}
+    		.abbreviate {
+    			display: inline-block;
+    		}
+    		#heading_1, #heading_2, #heading_3 {
+    			font-size: 25px;
+    		}
+    		#div_3 p {
+    			font-size: 14px;
+    		}
+    		#div_3 h1 {
+    			font-size: 25px;
+    		}
+    		#div_1 {
+    			padding-top: 6px;
+    		}
+    		#add_space_to_appearing_text {
+    			margin-top: 60px;
+    		}
+    		#I_manage_2 {
+    			display: inline-block;
+    		}
+    		#I_manage_1 {
+    			display: none;
+    		}
+    	}
+    	@media screen and (max-width: 530px) {
+    		.slideshow-container h1 {
+    			font-size: 15px;
+    		}
+    		.slideshow-container h2 {
+    			font-size: 10px;
+    		}
+    		.slideshow-container h3 {
+    			font-size: 10px;
+    		}
+    		.slideshow-container h4 {
+    			font-size: 7px;
+    		}
+    		.prev, .next {
+			    padding: 6px;
+			    font-size: 25px;
+			}
+			.prev {
+				transform: translate(90%);
+			}
+			.next {
+				transform: translate(-90%);
+			}
+			.div_border {
+			    background-size: 1px 30%;
+			    background-position: right 0px bottom 150px;
+			}
+			#heading_1, #heading_2, #heading_3 {
+    			font-size: 15px;
+    		}
+    	.blabla {
+    			width: 108px;
+    			height: 43px;
+    		}
+    	.btn {
+			    width: 120px;
+			    height: 43px;
+			    font-size: 1em;
+			    font-weight:900;
+			    font-size:11px;
+			}
+	     #change_LinkedIn_Forward {
+	       font-size: 11px;
+	        }
+	     #opaque_banner {
+	       height: 200px;
+	        }
+	    #anchor1 {
+	    	margin-left: 14px;
+	    	}
+	    #appearing_text {
+				font-size: 16px; 
+			}
+			#div_4:after {
+				bottom: 45px;
+			}
+			#rondelle {
+				margin-top: 70px; 
+			}
+      .box {
+          width: 210px;
+          height: 300px;
+        }
+      .img_box img {
+          text-align: center; /* I might have to assign that to the source element directly */
+      }
+      .box h2 {
+          font-size: 16px;
+          word-spacing: -1px;
+      }
+      .box p {
+          font-size: 11px;
+          line-height: 13px;
+      }
+      #my_story_heading {
+        font-size: 16px;
+      }
+      #my_story_heading_span {
+        font-size: 14px;
+      }
+      .box:active .img_box img{  /* use active as pseudo instead of hover for smartphone screen sizes, not done yet */
+        transform: scale(1.2);
+      }
+      .box:active .details {
+        transform: scaleY(1); /* use active as pseudo instead of hover for smartphone screen sizes, not done yet */
+      }
+      #container_contact {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        height: 350px;
+      }
+      #image_question {
+        font-size: 20px;
+        padding-left: 30px;
+      }
+      #image_text {
+        font-size: 15px;
+        line-height: 18px;
+        padding-left: 30px;
+      }
+      #AYU_image {
+        width: 160px;
+        height: auto;
+      }
+	    }
+    </style>
+  </head>
+  <header>
+  		<nav>
+  			<ul class="nav">
+  				<li><div><a href="#linking_to_my_skills" class="btn">
+                <svg width="200" height="50">
+                  <defs>
+                    <linearGradient id="grad1">
+                      <stop offset="0%" stop-color="#B27700"/>
+                      <stop offset="100%" stop-color="#9C6900"/>
+                    </linearGradient>
+                  </defs>
+                  <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="184" height="43" class="blabla"></rect>
+                </svg>
+                <span>My Skills</span></a>
+              </div>
+          </li>
+          <li><div><a href="#linking_to_my_story" class="btn">
+            <svg width="200" height="50">
+                         <defs>
+                           <linearGradient id="grad1">
+                             <stop offset="0%" stop-color="#B27700"/>
+                             <stop offset="100%" stop-color="#9C6900" />
+                           </linearGradient>
+                         </defs>
+                     <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="184" height="43" class="blabla"></rect>
+                     </svg>
+                     <span>My Story</span></a></div></li>
+          <li><div><a href="#linking_to_my_contact" class="btn">
+                     <svg width="200" height="50">
+                         <defs>
+                           <linearGradient id="grad1">
+                             <stop offset="0%" stop-color="#B27700"/>
+                             <stop offset="100%" stop-color="#9C6900" />
+                           </linearGradient>
+                         </defs>
+                     <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="184" height="43" class="blabla"></rect>
+                     </svg>
+                     <span>My Contact</span></a></div></li>
+          <li id="li1"><a style="background-color: none; color: white; text-decoration: none; font-family: 'Cardo'; font-weight:900; font-size:20px; letter-spacing: 0.045em;" href="https://www.linkedin.com/in/page-andreas-gratz/"><span style="position: relative; top:-4px; color: grey;" id="change_LinkedIn_Forward" >Forward to:</span><img src="linkedIn.png" style="width: 40px; transform: translate(7%, 22%); padding-right: 30px"></a></li>
+        </ul>
+      </nav>
+  </header>
+<body>
+  <div id="div_1">
+    <div id="div_2"><img id="img_1" src="Website_pic.jpg" alt="profile image"></div>
+    <div id="div_3"><h1 class="colour_text"><span id="I_manage_1" class="no_wrap_heading">I manage, code</span><span id="I_manage_2" class="no_wrap_heading"><br>I manage, code</span> and analyze digital!</h1><p>Looking for an expert with a project management, business and IT background? Somebody with a first-tier Master degree and experience? Look no further! My ability to integrate digital skills is at the heart of who I am and what I do.</p></div>
+  </div>
+
+  <div id="add_space_to_appearing_text" style="display: flex; justify-content: center; position: relative;">
+  <div id="div_4"><a id="linking_to_my_skills"></a>
+    <div id="appearing_text" class="animated-words text-wrapper" style="font-family: 'Oswald', sans-serif; font-weight: bold; text-transform: uppercase; flex-direction: column; flex-wrap: wrap; padding-top: 34px; white-space: nowrap;">
+      <span class="am1 nl">I am ...</span> 
+      <span class="am1 nl">an energized team-player.</span>
+      <span class="am1 nl">somebody who goes the extra mile.</span>
+      <span class="am1 nl">a great motivator.</span>
+      <span class="am1 nl">always eager to help.</span>
+      <span class="am1 nl">never lost for ideas.</span>
+      <span class="am1 nl">an analyst and logical thinker.</span>
+      <span class="am1 nl">a straight-talking kind of guy.</span>
+      <span class="am1 nl">someone who appreciates feedback.</span>
+      <span class="am1 nl">a colleague one can open up to.</span>
+      <span class="am1 nl">a servant-leader.</span>
+      <span class="am1 nl">an avid presenter.</span>
+    </div>
+  </div>
+  </div>
+
+ <div id="rondelle" class="slideshow-container" style="width: 70%;">
+  <div class="slideshow-inner" style="margin-left: 10px; margin-right: 10px;">
+
+
+  <div class="mySlides fade">
+
+    <div class="wrapping">
+      <div class=div_border style='width: 35%; height: 100%; background-color: rgba(0, 0, 0, .95);'>
+        <h1>Data Analysis</h1>
+        <h2>I can do it all:<ul><li>accessing data from the web</li><li>from databases</li><li>cleaning and wrangling data</li><li>storing it in databases</li><li>parsing the data</li></ul></h2>
+      </div>
+      <div class="div_5">
+      			<div class="skill-boxes">
+      				<div class="pseudo_div"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1" style="margin-bottom: 10px;"></div>
+      				<div class="rating-boxes2">
+      					<img class="icon_images" src='python.png' alt="Python icon"/>
+      				</div>
+      				<h3>Python<h3>
+      			</div>
+      			<div class="skill-boxes">
+      				<div class="pseudo_div"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1" style="margin-bottom: 10px;"></div>
+      				<div class="rating-boxes2">
+      					<img class="icon_images" src='R_logo.png' alt="R icon"/>
+      				</div>
+      				<h3>R<h3>
+      			</div>
+      			<div class="skill-boxes">
+      				<div class="pseudo_div"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1" style="margin-bottom: 10px;"></div>
+      				<div class="rating-boxes2">
+      					<img class="icon_images" style="width: 45%;" src='SQL.png' alt="SQL icon"/>
+      				</div>
+      				<h3>SQL</h3>
+      			</div>
+      			<div class="skill-boxes">
+      				<div class="pseudo_div"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1" style="margin-bottom: 10px;"></div>
+      				<div class="rating-boxes2">
+      					<img class="icon_images" style="width: 45%;" src='Excel.png' alt="Excel icon"/>
+      				</div>
+      				<h3>Excel</h3>
+      			</div>
+				<div class="skill-boxes">
+					<div class="pseudo_div"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1" style="margin-bottom: 10px;"></div>
+      				<div class="rating-boxes2">
+      					<img class="icon_images" style="width: 40%;" src='json.png' alt="json icon"/>
+      				</div>
+      				<h3>json</h3>    				
+      			</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+
+    <div class="wrapping">
+      <div class=div_border style='width: 35%; height: 100%; background-color: rgba(0, 0, 0, .95);'>
+        <h1 id="heading_1"><span class="no_abbreviate">Data Visualization</span><span class="abbreviate">Data Visuali- zation</span></h1>
+        <h2>I can make sense of data:<ul><li>stellar visualizations</li><li>presenting financial data etc.</li><li>time series analysis</li></ul></h2>
+      </div>
+      <div class="div_5">
+      			<div class="skill-boxes">
+      				<div class="pseudo_div"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1" style="margin-bottom: 10px;"></div>
+      				<div class="rating-boxes2">
+      					<img class="icon_images" src='python.png' alt="python icon"/>
+      				</div>
+      				<h3>Python<h3>
+      			</div>
+      			<div class="skill-boxes">
+      				<div class="pseudo_div"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1" style="margin-bottom: 10px;"></div>
+      				<div class="rating-boxes2">
+      					<img class="icon_images" src='R_logo.png' alt="R icon"/>
+      				</div>
+      				<h3>R<h3>
+      			</div>
+      			<div class="skill-boxes">
+      				<div class="pseudo_div"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1" style="margin-bottom: 10px;"></div>
+      				<div class="rating-boxes2">
+      					<img class="icon_images" src='Tableau.png' alt="Tableau icon" style="width: 38%; border: solid white 2px; background: white;" />
+      				</div>
+      				<h3>Tableau<h3>
+      			</div>
+      			<div class="skill-boxes">
+      				<div class="pseudo_div"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1" style="margin-bottom: 10px;"></div>
+      				<div class="rating-boxes2">
+      					<img style="width: 45%;" class="icon_images" src='Excel.png' alt="Excel icon"/>
+      				</div>
+      				<h3>Excel<h3>
+      			</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+
+    <div class="wrapping">
+      <div class=div_border style='width: 35%; height: 100%; background-color: rgba(0, 0, 0, .95);'>
+        <h1 id="heading_2"><span class="no_abbreviate">Web Development</span><span class="abbreviate">Web Develop- ment</span></h1>
+        <h2>I know how to present content online:<ul><li>designing solutions</li><li>ensuring responsiveness</li><li>driving interaction</li><li>collecting data</li></ul></h2>
+      </div>
+      <div class="div_5">
+      			<div class="skill-boxes">
+      				<div class="pseudo_div"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1" style="margin-bottom: 10px;"></div>
+      				<div class="rating-boxes2">
+      					<img class="icon_images" style="width: 48%; padding-top: 4%;" src='HTML5.png' alt="HTML5 icon"/>
+      				</div>
+      				<h3>HTML<h3>
+      			</div>
+      			<div class="skill-boxes">
+      				<div class="pseudo_div"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1" style="margin-bottom: 10px;"></div>
+      				<div class="rating-boxes2">
+      					<img class="icon_images" style="width: 48%; padding-top: 4%; padding-bottom: 4%;" src='CSS3.png' alt="CSS3 icon"/>
+      				</div>
+      				<h3>CSS<h3>
+      			</div>
+      			<div class="skill-boxes">
+      				<div class="pseudo_div"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1" style="margin-bottom: 10px;"></div>
+      				<div class="rating-boxes2">
+      					<img class="icon_images" style="width: 39%; padding-top: 7%;" src='JavaScript.png' alt="JavaScript icon"/>
+      				</div>
+      				<h3>JavaScript<h3>
+      			</div>
+      			<div class="skill-boxes">
+      				<div class="pseudo_div"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1" style="margin-bottom: 10px;"></div>
+      				<div class="rating-boxes2">
+      					<img class="icon_images" style="width: 41%; padding-top: 2%;" src='git.png' alt="git icon"/>
+      				</div>
+      				<h3>git<h3>
+      			</div>
+				<div class="skill-boxes">
+					<div class="pseudo_div"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1" style="margin-bottom: 10px;"></div>
+      				<div class="rating-boxes2">
+      					<img class="icon_images" src='python.png' alt="Python icon"/>
+      				</div>
+      				<h3>Python<h3>
+      			</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+
+    <div class="wrapping">
+      <div class=div_border style='width: 35%; height: 100%; background-color: rgba(0, 0, 0, .95);'>
+        <h1 id="heading_3"><span class="no_abbreviate">Project Management</span><span class="abbreviate">Project Manage- ment</span></h1>
+        <h2>I thrive to facilitate collaboration:<ul><li>accompanying ideation and planning</li><li>leading a team of diversity</li><li>integration management</li></ul></h2>
+      </div>
+      <div class="div_5">
+      			<div class="skill-boxes">
+      				<div class="pseudo_div"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1" style="margin-bottom: 10px;"></div>
+      				<div class="rating-boxes2">
+      					<img class="icon_images" src='CAPM.png' alt="CAPM icon"/>
+      				</div>
+      				<h3>Classic<h3>
+      			</div>
+      			<div class="skill-boxes">
+      				<div class="pseudo_div"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1" style="margin-bottom: 10px;"></div>
+      				<div class="rating-boxes2">
+      					<img class="icon_images" style="width: 47%;" src='SCRUM.png' alt="SCRUM icon"/>
+      				</div>
+      				<h3>Agile<h3>
+      			</div>
+      			<div class="skill-boxes">
+      				<div class="pseudo_div"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1" style="margin-bottom: 10px;"></div>
+      				<div class="rating-boxes2">
+      					<img class="icon_images" style="width: 48%;" src='Jira.png' alt="Jira icon"/>
+      				</div>
+      				<h3>Jira<h3>
+      			</div>
+      			<div class="skill-boxes">
+      				<div class="pseudo_div"></div>
+      				<div class="rating-boxes0"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1" style="margin-bottom: 10px;"></div>
+      				<div class="rating-boxes2">
+      					<img class="icon_images" style="width: 51%;" src='NPV.png' alt="NPV icon"/>
+      				</div>
+      				<h3>KPIs<h3>
+      			</div>
+				<div class="skill-boxes">
+					<div class="pseudo_div"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1"></div>
+      				<div class="rating-boxes1" style="margin-bottom: 10px;"></div>
+      				<div class="rating-boxes2">
+      					<img class="icon_images" style="width: 44%; background-color: #610FB3; border: solid #610FB3 2px;" src='Intercultural.png' alt="icon intercultural">
+      				</div>
+      				<h3 style="text-align: center;">Inter-<br>cultural</h3>
+      			</div>
+      </div>
+    </div>
+  
+  </div>
+
+
+  <a class="prev" onclick='plusSlides(-1)' style="border: 1px solid black; color: black; background-color: rgba(255, 255, 255, .5);">&#10094;</a>
+  <a class="next" onclick='plusSlides(1)' style="border: 1px solid black; color: black; background-color: rgba(255, 255, 255, .5);">&#10095;</a>
+</div>
+<br/>
+
+
+<div style='text-align: center;'>
+  <span class="dot" onclick='currentSlide(1)'></span>
+  <span class="dot" onclick='currentSlide(2)'></span>
+  <span class="dot" onclick='currentSlide(3)'></span>
+  <span class="dot" onclick='currentSlide(4)'></span>
+</div>
+
+</div>
+
+
+<div style="margin-top: 170px;"><a id="linking_to_my_story"></a></div>
+<h1 id="my_story_heading">Follow my Story<br><span id="my_story_heading_span">(Hover with the mouse over a picture and the text will appear)</span></h1>
+<div id="photo_container">
+    <div class="box">
+      <div class="img_box">
+        <img src="Bertha_pic.png">
+      </div>
+      <div class="details">
+        <h2 class="colour_pic_headings">High School of a biotechnological orientation (till 2009)</h2>
+        <p>From childhood onwards I have always been interested in science, awestruck by nature's complexity with layer beneath layer until one arrives at the atom, whereas I see similarities in IT with bits as the core components behind the frontend processes visible to a user. This observation is even more intriguing given the increasing coalescence of both disciplines, biotech and IT, as documented by the famous writer Yuval Noah Harari.</p>
+      </div>
+    </div>
+    <div class="box">
+      <div class="img_box">
+        <img src="Norge.png">
+      </div>
+        <div class="details">
+        <h2 class="colour_pic_headings">One-year Voluntary Community Service in Norway (till 2010)</h2>
+        <p>After having achieved the General Qualification for University Entrance (Abitur), I wanted to get to know another country with a different language and culture. I decided for the European Voluntary Service, funded by the EU, and went to Norway. There, I worked both for a countryside education center und a well-known cancer rehabilitation facility. This picture is taken before the arrival of our patients for a weekly outing in the nearby mountains.</p>
+      </div>
+    </div>
+    <div class="box">
+      <div class="img_box">
+        <img src="Bachelor.png">
+      </div>
+         <div class="details">
+        <h2 class="colour_pic_headings">Bachelor studies in Konstanz (from 2011 till 2015)</h2>
+        <p>Although I had a life science background from my studies at High School, I decided to pursue my Bachelor studies in Politics and Public Administration at the University of Konstanz, part of the small group of aspiring universities in the Excellence Initiative of the German government. Already during my High School Studies I had been the outstanding student in Social Sciences and wanted to deepen my knowledge at this breathtakingly beautiful location.</p>
+      </div>
+    </div>
+    <div class="box">
+      <div class="img_box">
+        <img src="CPG.png">
+      </div>
+        <div class="details">
+        <h2 class="colour_pic_headings">Internship at the German Center CPG in Bangkok</h2>
+        <p>After I had my Erasmus exchange studies at Université de la Nouvelle-Calédonie on the French island of New Caledonia in the Pacific Ocean, I moved to Bangkok for my internship in the fall of 2013. There, I worked for five months with the CPG which is a pioneering cross-national association of three faculties of law of German universities, and the faculty of law of Thammasat University. I helped plan and manage conferences as well as publications of the center.</p>
+      </div>
+    </div>
+    <div class="box">
+      <div class="img_box">
+        <img src="JRS.png">
+      </div>
+        <div class="details">
+        <h2 class="colour_pic_headings">Caseworker for Refugees with the JRS in Bangkok (till November 2015)</h2>
+        <p>Both my studies in Social Science and my internship in Bangkok had a decidedly positive influence on me and so I decided to combine the two, working as a social worker with refugees in Bangkok right after the completion of my Bachelor studies. The work was difficult and my clients often faced very trying circumstances. The picture is taken from an English class for refugees from Somalia which I initiated and managed.</p>
+      </div>
+    </div>
+    <div class="box">
+      <div class="img_box">
+        <img src="Caritas.png">
+      </div>
+        <div class="details">
+        <h2 class="colour_pic_headings">Social Counselor for Refugees with Caritas in Germany (till June 2017)</h2>
+        <p>After having worked with refugees in Thailand, I returned to Karlsruhe in Germany amid the 2015/2016 influx of people in need from various national backgrounds. I counseled and helped asylum seekers and refugees with various issues and expended considerable effort for the initiation and management of a local alliance of organizations. The picture is taken from an event in Karlsruhe at which our alliance was present.</p>
+      </div>
+    </div>
+    <div class="box">
+      <div class="img_box">
+        <img src="Aalto.png">
+      </div>
+        <div class="details">
+        <h2 class="colour_pic_headings">CEMS Master Studies in Helsinki (from 2017 till 2020)</h2>
+        <p>Working as a social worker, I had found that I flourish when organizing and managing projects and when facilitating team efforts. Therefore, I decided to pursue my Master studies in Management, enrolling for a double degree with the prestigious CEMS degree. As part of my studies, I expanded my skills in statistics and coding acquired through my Bachelor studies and generally focused on the topic of Digitalization, having several relevant jobs beside my studies. I am currently finalizing my Thesis.</p>
+      </div>
+    </div>
+    <div class="box">
+      <div class="img_box">
+        <img src="CEMS_Santiago.png">
+      </div>
+        <div class="details">
+        <h2 class="colour_pic_headings">CEMS Exchange Studies in Santiago de Chile (Spring of 2019)</h2>
+        <p>While still working remotely for two jobs in Finland, I went to Santiago de Chile for my exchange studies. I expected that Chile would be an adventure and I found the countryside to be breathtaking. I also enjoyed the company of other CEMS students from around the world. Importantly, with a group of students I worked on a three-month long project for a big MNC in the shipping industry to which I contributed my statistical and analytical expertise.</p>
+      </div>
+    </div>
+    <div class="box">
+      <div class="img_box">
+        <img src="AYU.png">
+      </div>
+        <div class="details">
+        <h2 class="colour_pic_headings">Today, a consultant in Germany, supporting companies in their efforts at digitalization</h2>
+        <p>In June I started working for Ayudantes GmbH in Hamburg, Germany, which is a young and aspiring consulting firm focusing on Digitalization and all the challenges that arise from it. Until recently, I have managed and implemented a project that centered around streamlining management processes using Microsoft's Power Platform.</p>
+      </div>
+    </div>
+</div>
+
+
+<div id="container_contact"><a id="linking_to_my_contact"></a>
+  <div id="contact_image_div">
+    <img id="contact_img" src="contact_pic.jpg">
+  </div>
+  <div id="contact_text_div">
+    <h2 id="image_question">Why don't you reach out?!</h2>
+    <h3 id="image_text"><br><br>Contact Me <a style="font-weight: bold; text-decoration: underline; color: grey;" href="mailto:AndyMichaelG@gmail.com?subject=Mail Regarding Your Site">via Email</a><br><br><br>... or find me via my employer:<br><br>Go to:<a style="background-color: none;" href="https://www.ayudantes.de"><br><img id="AYU_image" src="Ayudantes.png"></a></h3>
+  </div>
+</div>
+
+<div style="position: relative; height: 50px;"></div>
+
+<script type="text/javascript">
+var slideIndex = 1;
+
+var myTimer;
+
+var slideshowContainer;
+
+window.addEventListener("load",function() {
+    showSlides(slideIndex);
+    myTimer = setInterval(function(){plusSlides(1)}, 14000);
+  
+    //COMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+    slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
+  
+    //UNCOMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+    // slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
+  
+    slideshowContainer.addEventListener('mouseenter', pause)
+    slideshowContainer.addEventListener('mouseleave', resume)
+})
+
+// NEXT AND PREVIOUS CONTROL
+function plusSlides(n){
+  clearInterval(myTimer);
+  if (n < 0){
+    showSlides(slideIndex -= 1);
+  } else {
+   showSlides(slideIndex += 1); 
+  }
+  
+  //COMMENT OUT THE LINES BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+  
+  if (n === -1){
+    myTimer = setInterval(function(){plusSlides(n + 2)}, 14000);
+  } else {
+    myTimer = setInterval(function(){plusSlides(n + 1)}, 14000);
+  }
+}
+
+//Controls the current slide and resets interval if needed
+function currentSlide(n){
+  clearInterval(myTimer);
+  myTimer = setInterval(function(){plusSlides(n + 1)}, 14000);
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n){
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+pause = () => {
+  clearInterval(myTimer);
+}
+
+resume = () =>{
+  clearInterval(myTimer);
+  myTimer = setInterval(function(){plusSlides(slideIndex)}, 14000);
+}
+</script>
+
+</body>
+</html>
+
+
+

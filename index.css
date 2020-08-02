@@ -1,0 +1,488 @@
+html {
+	font: normal 100%/1.5 Georgia, sans-serif;
+	color: #373737;
+}
+body {
+	background-color: #DDDDDD;
+}
+.headline {
+        font-family: 'Montserrat+Alternates', sans-serif;
+        font-weight:900;
+        letter-spacing: 0.045em;
+        left: 50%;
+        top: 32%;
+        background-color: rgba(0, 0, 0, .95);
+        padding: 30px;
+        font-size: 50px;
+        opacity: 0.85;
+      }
+#resizing_1 {
+    word-spacing: -3px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 28px;
+    text-transform: uppercase;
+    background: rgb(255,130,130);
+    background: -moz-linear-gradient(left,  rgba(178,119,0,1) 0%, rgba(156,105,0,1) 100%);
+    background: -webkit-linear-gradient(left,  rgba(178,119,0,1) 0%,rgba(156,105,0,1) 100%);
+    background: linear-gradient(to right,  rgba(178,119,0,1) 0%,rgba(156,105,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B27700', endColorstr='#9C6900',GradientType=1 );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ }
+#resizing_2, #resizing_3{
+    color: grey;
+    text-shadow: none;
+    font-family: 'Cardo'
+}
+.center-screen {
+ 	position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+.circle1 {
+	background: #B27700;
+	width: 2px;
+	height: 2px;
+	position: absolute;
+	border-radius: 50% 50% 50% 50%;
+	left: 5%;
+	top: 5%;
+}
+.circle2 {
+	background: #B27700;
+	width: 2px;
+	height: 2px;
+	position: absolute;
+	border-radius: 50% 50% 50% 50%;
+	left: 5%;
+	top: 50%;
+}
+.circle3 {
+	background: #B27700;
+	width: 2px;
+	height: 2px;
+	position: absolute;
+	border-radius: 50% 50% 50% 50%;
+	left: 5%;
+	top: 95%;
+}
+.circle4 {
+	background: #B27700;
+	width: 2px;
+	height: 2px;
+	position: absolute;
+	border-radius: 50% 50% 50% 50%;
+	left: 50%;
+	top: 95%;
+}
+.circle5 {
+	background: #B27700;
+	width: 2px;
+	height: 2px;
+	position: absolute;
+	border-radius: 50% 50% 50% 50%;
+	left: 95%;
+	top: 95%;
+}
+.circle6 {
+	background: #B27700;
+	width: 2px;
+	height: 2px;
+	position: absolute;
+	border-radius: 50% 50% 50% 50%;
+	left: 95%;
+	top: 50%;
+}
+.circle7 {
+	background: #B27700;
+	width: 2px;
+	height: 2px;
+	position: absolute;
+	border-radius: 50% 50% 50% 50%;
+	left: 95%;
+	top: 5%;
+}
+.circle8 {
+	background: #B27700;
+	width: 2px;
+	height: 2px;
+	position: absolute;
+	border-radius: 50% 50% 50% 50%;
+	left: 50%;
+	top: 5%;
+}
+@keyframes anime1 {
+	12% {background-color: #B27700; left: 5%; top: 50%;}
+	24% {background-color: #B27700; left: 5%; top: 95%;}
+	36% {background-color: #B27700; left: 50%; top: 95%;}
+	48% {background-color: #B27700; left: 95%; top: 95%;}
+	60% {background-color: #B27700; left: 95%; top: 50%;}
+	72% {background-color: #B27700; left: 95%; top: 5%;}
+	84% {background-color: #B27700; left: 50%; top: 5%;}
+	100% {background-color: #B27700; left: 5%; top: 5%;}
+}
+@keyframes anime2 {
+	12% {background-color: #B27700; left: 5%; top: 95%;}
+	24% {background-color: #B27700; left: 50%; top: 95%;}
+	36% {background-color: #B27700; left: 95%; top: 95%;}
+	48% {background-color: #B27700; left: 95%; top: 50%;}
+	60% {background-color: #B27700; left: 95%; top: 5%;}
+	72% {background-color: #B27700; left: 50%; top: 5%;}
+	84% {background-color: #B27700; left: 5%; top: 5%;}
+	100% {background-color: #B27700; left: 5%; top: 50%;}
+}
+@keyframes anime3 {
+	12% {background-color: #B27700; left: 50%; top: 95%;}
+	24% {background-color: #B27700; left: 95%; top: 95%;}
+	36% {background-color: #B27700; left: 95%; top: 50%;}
+	48% {background-color: #B27700; left: 95%; top: 5%;}
+	60% {background-color: #B27700; left: 50%; top: 5%;}
+	72% {background-color: #B27700; left: 5%; top: 5%;}
+	84% {background-color: #B27700; left: 5%; top: 50%;}
+	100% {background-color: #B27700; left: 5%; top: 95%;}
+}
+@keyframes anime4 {
+	12% {background-color: #B27700; left: 95%; top: 95%;}
+	24% {background-color: #B27700; left: 95%; top: 50%;}
+	36% {background-color: #B27700; left: 95%; top: 5%;}
+	48% {background-color: #B27700; left: 50%; top: 5%;}
+	60% {background-color: #B27700; left: 5%; top: 5%;}
+	72% {background-color: #B27700; left: 5%; top: 50%;}
+	84% {background-color: #B27700; left: 5%; top: 95%;}
+	100% {background-color: #B27700; left: 50%; top: 95%;}
+}
+@keyframes anime5 {
+	12% {background-color: #B27700; left: 95%; top: 50%;}
+	24% {background-color: #B27700; left: 95%; top: 5%;}
+	36% {background-color: #B27700; left: 50%; top: 5%;}
+	48% {background-color: #B27700; left: 5%; top: 5%;}
+	60% {background-color: #B27700; left: 5%; top: 50%;}
+	72% {background-color: #B27700; left: 5%; top: 95%;}
+	84% {background-color: #B27700; left: 50%; top: 95%;}
+	100% {background-color: #B27700; left: 95%; top: 95%;}
+}
+@keyframes anime6 {
+	12% {background-color: #B27700; left: 95%; top: 5%;}
+	24% {background-color: #B27700; left: 50%; top: 5%;}
+	36% {background-color: #B27700; left: 5%; top: 5%;}
+	48% {background-color: #B27700; left: 5%; top: 50%;}
+	60% {background-color: #B27700; left: 5%; top: 95%;}
+	72% {background-color: #B27700; left: 50%; top: 95%;}
+	84% {background-color: #B27700; left: 95%; top: 95%;}
+	100% {background-color: #B27700; left: 95%; top: 50%;}
+}
+@keyframes anime7 {
+	12% {background-color: #B27700; left: 50%; top: 5%;}
+	24% {background-color: #B27700; left: 5%; top: 5%;}
+	36% {background-color: #B27700; left: 5%; top: 50%;}
+	48% {background-color: #B27700; left: 5%; top: 95%;}
+	60% {background-color: #B27700; left: 50%; top: 95%;}
+	72% {background-color: #B27700; left: 95%; top: 95%;}
+	84% {background-color: #B27700; left: 95%; top: 50%;}
+	100% {background-color: #B27700; left: 95%; top: 5%;}
+}
+@keyframes anime8 {
+	12% {background-color: #B27700; left: 5%; top: 5%;}
+	24% {background-color: #B27700; left: 5%; top: 50%;}
+	36% {background-color: #B27700; left: 5%; top: 95%;}
+	48% {background-color: #B27700; left: 50%; top: 95%;}
+	60% {background-color: #B27700; left: 95%; top: 95%;}
+	72% {background-color: #B27700; left: 95%; top: 50%;}
+	84% {background-color: #B27700; left: 95%; top: 5%;}
+	100% {background-color: #B27700; left: 50%; top: 5%;}
+}
+@-webkit-keyframes sideWays {
+    0% {
+        margin-left:15px;
+        margin-right: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    20% {
+        margin-left:0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+    40% {
+        margin-left:15px;
+        margin-top: 15px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+    60% {
+        margin-left:0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+    80% {
+        margin-left:15px;
+        margin-top: 15px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+    100% {
+        margin-left:0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+}
+@-moz-keyframes sideWays {
+    0% {
+        margin-left:15px;
+        margin-right: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    20% {
+        margin-left:0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+    40% {
+        margin-left:15px;
+        margin-top: 15px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+    60% {
+        margin-left:0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+    80% {
+        margin-left:15px;
+        margin-top: 15px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+    100% {
+        margin-left:0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+}
+@-o-keyframes sideWays {
+    0% {
+        margin-left:15px;
+        margin-right: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    20% {
+        margin-left:0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+    40% {
+        margin-left:15px;
+        margin-top: 15px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+    60% {
+        margin-left:0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+    80% {
+        margin-left:15px;
+        margin-top: 15px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+    100% {
+        margin-left:0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+}
+.x1a {
+    -webkit-transform: scale(1.8);
+    -moz-transform: scale(1.8);
+    transform: scale(1.8);
+    -webkit-animation: sideWays ease-in-out infinite alternate, anime1 infinite ease-in-out normal;
+    -moz-animation: sideWays ease-in-out infinite alternate, anime1 infinite ease-in-out normal;
+    -o-animation: sideWays ease-in-out infinite alternate, anime1 infinite ease-in-out normal;
+}
+.x1b {
+    -webkit-transform: scale(1.8);
+    -moz-transform: scale(1.8);
+    transform: scale(1.8);
+    -webkit-animation: sideWays ease-in-out infinite alternate, anime1 infinite ease-in-out reverse;
+    -moz-animation: sideWays ease-in-out infinite alternate, anime1 infinite ease-in-out reverse;
+    -o-animation: sideWays ease-in-out infinite alternate, anime1 infinite ease-in-out reverse;
+}
+.x2a {
+    -webkit-transform: scale(2.5);
+    -moz-transform: scale(2.5);
+    transform: scale(2.5);
+    -webkit-animation: sideWays ease-in-out infinite alternate, anime2 infinite ease-in-out reverse;
+    -moz-animation: sideWays ease-in-out infinite alternate, anime2 infinite ease-in-out reverse;
+    -o-animation: sideWays ease-in-out infinite alternate, anime2 infinite ease-in-out reverse;
+}
+.x2b {
+    -webkit-transform: scale(2.5);
+    -moz-transform: scale(2.5);
+    transform: scale(2.5);
+    -webkit-animation: sideWays ease-in-out infinite alternate, anime2 infinite ease-in-out normal;
+    -moz-animation: sideWays ease-in-out infinite alternate, anime2 infinite ease-in-out normal;
+    -o-animation: sideWays ease-in-out infinite alternate, anime2 infinite ease-in-out normal;
+}
+.x3a {
+    -webkit-transform: scale(1.6);
+    -moz-transform: scale(1.6);
+    transform: scale(1.6);
+    -webkit-animation: sideWays ease-in-out infinite alternate, anime3 infinite ease-in-out normal;
+    -moz-animation: sideWays ease-in-out infinite alternate, anime3 infinite ease-in-out normal;
+    -o-animation: sideWays ease-in-out infinite alternate, anime3 infinite ease-in-out normal;
+}
+.x3b {
+    -webkit-transform: scale(1.6);
+    -moz-transform: scale(1.6);
+    transform: scale(1.6);
+    -webkit-animation: sideWays ease-in-out infinite alternate, anime3 infinite ease-in-out reverse;
+    -moz-animation: sideWays ease-in-out infinite alternate, anime3 infinite ease-in-out reverse;
+    -o-animation: sideWays ease-in-out infinite alternate, anime3 infinite ease-in-out reverse;
+}
+.x4a {
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    transform: scale(1.4);
+    -webkit-animation: sideWays ease-in-out infinite alternate, anime4 infinite ease-in-out reverse;
+    -moz-animation: sideWays ease-in-out infinite alternate, anime4 infinite ease-in-out reverse;
+    -o-animation: sideWays ease-in-out infinite alternate, anime4 infinite ease-in-out reverse;
+}
+.x4b {
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    transform: scale(1.4);
+    -webkit-animation: sideWays ease-in-out infinite alternate, anime4 infinite ease-in-out normal;
+    -moz-animation: sideWays ease-in-out infinite alternate, anime4 infinite ease-in-out normal;
+    -o-animation: sideWays ease-in-out infinite alternate, anime4 infinite ease-in-out normal;
+}
+.x5a {
+    -webkit-transform: scale(3);
+    -moz-transform: scale(3);
+    transform: scale(3);
+    -webkit-animation: sideWays ease-in-out infinite alternate, anime5 infinite ease-in-out normal;
+    -moz-animation: sideWays ease-in-out infinite alternate, anime5 infinite ease-in-out normal;
+    -o-animation: sideWays ease-in-out infinite alternate, anime5 infinite ease-in-out normal;
+}
+.x5b {
+    -webkit-transform: scale(3);
+    -moz-transform: scale(3);
+    transform: scale(3);
+    -webkit-animation: sideWays ease-in-out infinite alternate, anime5 infinite ease-in-out reverse;
+    -moz-animation: sideWays ease-in-out infinite alternate, anime5 infinite ease-in-out reverse;
+    -o-animation: sideWays ease-in-out infinite alternate, anime5 infinite ease-in-out reverse;
+}
+.x6a {
+    -webkit-transform: scale(1.8);
+    -moz-transform: scale(1.8);
+    transform: scale(1.8);
+    -webkit-animation: sideWays ease-in-out infinite alternate, anime6 infinite ease-in-out reverse;
+    -moz-animation: sideWays ease-in-out infinite alternate, anime6 infinite ease-in-out reverse;
+    -o-animation: sideWays ease-in-out infinite alternate, anime6 infinite ease-in-out reverse;
+}
+.x6b {
+    -webkit-transform: scale(1.8);
+    -moz-transform: scale(1.8);
+    transform: scale(1.8);
+    -webkit-animation: sideWays ease-in-out infinite alternate, anime6 infinite ease-in-out normal;
+    -moz-animation: sideWays ease-in-out infinite alternate, anime6 infinite ease-in-out normal;
+    -o-animation: sideWays ease-in-out infinite alternate, anime6 infinite ease-in-out normal;
+}
+.x7a {
+    -webkit-transform: scale(2.3);
+    -moz-transform: scale(2.3);
+    transform: scale(2.3);
+    -webkit-animation: sideWays ease-in-out infinite alternate, anime7 infinite ease-in-out normal;
+    -moz-animation: sideWays ease-in-out infinite alternate, anime7 infinite ease-in-out normal;
+    -o-animation: sideWays ease-in-out infinite alternate, anime7 infinite ease-in-out normal;
+}
+.x7b {
+    -webkit-transform: scale(2.3);
+    -moz-transform: scale(2.3);
+    transform: scale(2.3);
+    -webkit-animation: sideWays ease-in-out infinite alternate, anime7 infinite ease-in-out reverse;
+    -moz-animation: sideWays ease-in-out infinite alternate, anime7 infinite ease-in-out reverse;
+    -o-animation: sideWays ease-in-out infinite alternate, anime7 infinite ease-in-out reverse;
+}
+.x8a {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-animation: sideWays ease-in-out infinite alternate, anime8 infinite ease-in-out reverse;
+    -moz-animation: sideWays ease-in-out infinite alternate, anime8 infinite ease-in-out reverse;
+    -o-animation: sideWays ease-in-out infinite alternate, anime8 infinite ease-in-out reverse;
+}
+.x8b {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-animation: sideWays ease-in-out infinite alternate, anime8 infinite ease-in-out normal;
+    -moz-animation: sideWays ease-in-out infinite alternate, anime8 infinite ease-in-out normal;
+    -o-animation: sideWays ease-in-out infinite alternate, anime8 infinite ease-in-out normal;
+}
+.container{
+    height:100%;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+}
+.btn {
+    position: relative;
+    display: inline-block;
+    width: 280px;
+    height: 120px;
+    font-weight: bolder;
+    line-height: 100px;
+    text-align: center;
+    font-family: "Cardo";
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration:none;
+    font-size:20px;
+    letter-spacing: 0.045em;
+}
+.btn svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.btn svg rect {
+    //stroke: #EC0033;
+    stroke-width: 4;
+    stroke-dasharray: 353, 0;
+    stroke-dashoffset: 0;
+    -webkit-transition: all 600ms ease;
+    transition: all 600ms ease;
+ }
+ .btn span {
+    background: rgb(255,130,130);
+    background: -moz-linear-gradient(left,  rgba(178,119,0,1) 0%, rgba(156,105,0,1) 100%);
+    background: -webkit-linear-gradient(left,  rgba(178,119,0,1) 0%,rgba(156,105,0,1) 100%);
+    background: linear-gradient(to right,  rgba(178,119,0,1) 0%,rgba(156,105,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B27700', endColorstr='#9C6900',GradientType=1 );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    padding-bottom: 23px;
+ }
+ .btn:hover svg rect {
+    stroke-width: 4;
+    stroke-dasharray: 196, 543;
+    stroke-dashoffset: 437;
+} 
