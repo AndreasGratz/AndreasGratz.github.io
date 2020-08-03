@@ -187,6 +187,10 @@ h1 span {
     float: left;
     transform: translate(7%, 7%);
 }
+#end_div {
+	position: relative;
+	height: 50px;
+}
 #rondelle {
 	margin-top: 100px; 
 }

@@ -214,14 +214,19 @@
       #div_2 {
 	    height: 250px;
 	    width: 250px;
+	    margin-right: 10px;
 	    }
 	  #img_1 {
 		height: 200px;
 		width: 200px;
+		transform: translate(12%, 12%);
 		}
 		#div_3 {
-			padding-top: 0px;
-			padding-bottom: 0px;
+			min-height: 340px;
+			min-width: 230px;
+		}
+		#end_div {
+			height: 0px;
 		}
 		}
     </style>
@@ -271,7 +276,7 @@
 <body>
   <div id="div_1">
     <div id="div_2"><img id="img_1" src="Website_pic.jpg" alt="profile image"></div>
-    <div id="div_3"><h1 class="colour_text"><span id="I_manage_1" class="no_wrap_heading">I manage, code</span><span id="I_manage_2" class="no_wrap_heading"><br>I manage, code</span> and analyze digital!</h1><p>Looking for an expert with a project management, business and IT background? Somebody with a first-tier Master degree and experience? Look no further! My ability to integrate digital skills is at the heart of who I am and what I do.</p></div>
+    <div id="div_3"><h1 class="colour_text"><span id="I_manage_1" class="no_wrap_heading">I manage, code</span><span id="I_manage_2" class="no_wrap_heading" style="white-space: normal;"><br>I manage, code and analyze digital!</span></h1><p>Looking for an expert with a project management, business and IT background? Somebody with a first-tier Master degree and experience? Look no further! My ability to integrate digital skills is at the heart of who I am and what I do.</p></div>
   </div>
 
   <div id="add_space_to_appearing_text" style="display: flex; justify-content: center; position: relative;">
@@ -783,7 +788,7 @@
   </div>
 </div>
 
-<div style="position: relative; height: 50px;"></div>
+<div id="end_div"></div>
 
 <script type="text/javascript">
 var slideIndex = 1;
