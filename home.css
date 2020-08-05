@@ -3,12 +3,14 @@ html {
 		color: #373737;
         height: 100%;
         width: 100%;
+        overflow-x: hidden;
 }
 body {
 		margin: 0;
         background-color: #DDDDDD;
         height: 100%;
         width: 100%;
+        overflow-x: hidden;
 }
 header {
 	background: rgba(0, 0, 0, .95);
