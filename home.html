@@ -14,7 +14,7 @@
     			font-size: 20px;
     		}
     	}
-    	@media screen and (max-width: 1100px) {
+    	@media screen and (max-width: 1150px) {
     		.slideshow-container h2 {
     			font-size: 18px;
     		}
@@ -22,26 +22,26 @@
     			padding-bottom: 20px;
     		}
     	}
-    	@media screen and (max-width: 970px) {
+    	@media screen and (max-width: 1000px) {
     		.slideshow-container h2 {
     			font-size: 16px;
     		}
     		#div_3 p {
-    			font-size: 21px;
+    			font-size: 20px;
     		}
     		#div_3 h1 {
     			font-size: 40px;
     		}
+        .rondelle_headings h1, #follow_my_story {
+            font-size: 36px;
+        }
     	}
-    	@media screen and (max-width: 830px) {
+    	@media screen and (max-width: 850px) {
     		.slideshow-container h2 {
     			font-size: 15px;
     		}
     		.slideshow-container h2 ul {
     			padding-left: 0;
-    		}
-    		#heading_1, #heading_2, #heading_3 {
-    			font-size: 25px;
     		}
     		#div_3 p {
     			font-size: 18px;
@@ -50,14 +50,11 @@
     		#div_3 h1 {
     			font-size: 33px;
     		}
+        .rondelle_headings h1, #follow_my_story {
+          font-size: 31px;
+        }
     	}
     	@media screen and (min-width: 700px) {
-    		.no_abbreviate {
-    			display: inline-block;
-    		}
-    		.abbreviate {
-    			display: none;
-    		}
     		#I_manage_2 {
     			display: none;
     		}
@@ -69,30 +66,24 @@
     		.slideshow-container h2 {
     			font-size: 12px;
     		}
-    		.slideshow-container h1 {
-    			font-size: 25px;
-    		}
     		.slideshow-container h3 {
     			font-size: 16px;
     		}
     		.slideshow-container h4 {
     			font-size: 9px;
     		}
-    		.no_abbreviate {
-    			display: none;
-    		}
-    		.abbreviate {
-    			display: inline-block;
-    		}
-    		#heading_1, #heading_2, #heading_3 {
-    			font-size: 25px;
-    		}
     		#div_3 p {
     			font-size: 14px;
     		}
     		#div_3 h1 {
-    			font-size: 25px;
+    			font-size: 26px;
     		}
+        .rondelle_headings h1, #follow_my_story {
+          font-size: 24px;
+        }
+        #my_story_heading_span {
+        display: block;
+        }
     		#div_1 {
     			padding-top: 6px;
     		}
@@ -107,9 +98,6 @@
     		}
     	}
     	@media screen and (max-width: 530px) {
-    		.slideshow-container h1 {
-    			font-size: 15px;
-    		}
     		.slideshow-container h2 {
     			font-size: 10px;
     		}
@@ -119,6 +107,15 @@
     		.slideshow-container h4 {
     			font-size: 7px;
     		}
+        .rondelle_headings h1, #follow_my_story {
+          font-size: 22px;
+          letter-spacing: 1px;
+          word-spacing: 4px;
+        }
+        #my_story_heading_span {
+        font-size: 14px;
+        display: block;
+      }
     		.prev, .next {
 			    padding: 6px;
 			    font-size: 25px;
@@ -133,9 +130,6 @@
 			    background-size: 1px 30%;
 			    background-position: right 0px bottom 150px;
 			}
-			#heading_1, #heading_2, #heading_3 {
-    			font-size: 15px;
-    		}
     	.blabla {
     			width: 108px;
     			height: 43px;
@@ -175,16 +169,11 @@
       .box h2 {
           font-size: 16px;
           word-spacing: -1px;
+          line-height: 20px;
       }
       .box p {
           font-size: 11px;
           line-height: 13px;
-      }
-      #my_story_heading {
-        font-size: 16px;
-      }
-      #my_story_heading_span {
-        font-size: 14px;
       }
       .box:active .img_box img {  /* use active as pseudo instead of hover for smartphone screen sizes, not done yet */
         transform: scale(1.2);
@@ -279,7 +268,7 @@
 <body>
   <div id="div_1">
     <div id="div_2"><img id="img_1" src="Website_pic.jpg" alt="profile image"></div>
-    <div id="div_3"><h1 class="colour_text"><span id="I_manage_1" class="no_wrap_heading">I manage, code</span><span id="I_manage_2" class="no_wrap_heading"><br>I manage, code</span> and analyze digital!</h1><p>Looking for an expert with a project management, business and IT background? Somebody with a first-tier Master degree and experience? Look no further! My ability to integrate digital skills is at the heart of who I am and what I do.</p></div>
+    <div id="div_3"><h1 class="colour_text"><span id="I_manage_1" class="no_wrap_heading">I manage, code</span><span id="I_manage_2" class="no_wrap_heading"><br>I manage, code</span> and analyze digital</h1><p>I have a diverse background with skills in project management, business and IT. What is more, I have strong soft skills, refined throughout my employments as a social worker. Most importantly, I am quick to acquire new knowledge and skills. Find out more about me and my background on this page.</p></div>
   </div>
 
   <div id="add_space_to_appearing_text" style="display: flex; justify-content: center; position: relative;">
@@ -307,9 +296,12 @@
 
   <div class="mySlides fade">
 
+    <div class="rondelle_headings">
+      <h1>Data Analysis</h1>
+    </div>
+
     <div class="wrapping">
-      <div class=div_border style='width: 35%; height: 100%; background-color: rgba(0, 0, 0, .95);'>
-        <h1>Data Analysis</h1>
+      <div class=div_border style='width: 35%; height: 100%; background-color: rgba(0, 0, 0, .82);'>
         <h2>I can do it all:<ul><li>accessing data from the web</li><li>from databases</li><li>cleaning and wrangling data</li><li>storing it in databases</li><li>parsing the data</li></ul></h2>
       </div>
       <div class="div_5">
@@ -404,9 +396,12 @@
 
   <div class="mySlides fade">
 
+    <div class="rondelle_headings">
+      <h1>Data Visualization</h1>
+    </div>
+
     <div class="wrapping">
-      <div class=div_border style='width: 35%; height: 100%; background-color: rgba(0, 0, 0, .95);'>
-        <h1 id="heading_1"><span class="no_abbreviate">Data Visualization</span><span class="abbreviate">Data Visuali- zation</span></h1>
+      <div class=div_border style='width: 35%; height: 100%; background-color: rgba(0, 0, 0, .82);'>
         <h2>I can make sense of data:<ul><li>stellar visualizations</li><li>presenting financial data etc.</li><li>time series analysis</li></ul></h2>
       </div>
       <div class="div_5">
@@ -484,9 +479,12 @@
 
   <div class="mySlides fade">
 
+    <div class="rondelle_headings">
+      <h1>Web Development</h1>
+    </div>
+
     <div class="wrapping">
-      <div class=div_border style='width: 35%; height: 100%; background-color: rgba(0, 0, 0, .95);'>
-        <h1 id="heading_2"><span class="no_abbreviate">Web Development</span><span class="abbreviate">Web Develop- ment</span></h1>
+      <div class=div_border style='width: 35%; height: 100%; background-color: rgba(0, 0, 0, .82);'>
         <h2>I know how to present content online:<ul><li>designing solutions</li><li>ensuring responsiveness</li><li>driving interaction</li><li>collecting data</li></ul></h2>
       </div>
       <div class="div_5">
@@ -581,9 +579,12 @@
 
   <div class="mySlides fade">
 
+    <div class="rondelle_headings">
+      <h1>Project Management</h1>
+    </div>
+
     <div class="wrapping">
-      <div class=div_border style='width: 35%; height: 100%; background-color: rgba(0, 0, 0, .95);'>
-        <h1 id="heading_3"><span class="no_abbreviate">Project Management</span><span class="abbreviate">Project Manage- ment</span></h1>
+      <div class=div_border style='width: 35%; height: 100%; background-color: rgba(0, 0, 0, .82);'>
         <h2>I thrive to facilitate collaboration:<ul><li>accompanying ideation and planning</li><li>leading a team of diversity</li><li>integration management</li></ul></h2>
       </div>
       <div class="div_5">
@@ -695,11 +696,11 @@
 
 
 <div style="margin-top: 170px;"><a id="linking_to_my_story"></a></div>
-<h1 id="my_story_heading">Follow my Story<br><span id="my_story_heading_span">(Hover with the mouse over a picture and the text will appear)</span></h1>
+<h1 id="my_story_heading"><span id="follow_my_story">Follow my Story<br></span><span id="my_story_heading_span">(Hover with the mouse over a picture and the text will appear)</span></h1>
 <div id="photo_container">
     <div class="box">
       <div class="img_box">
-        <img src="Bertha_pic.png">
+        <img src="Bertha_pic.png" class="CV_picture_show">
       </div>
       <div class="details">
         <h2 class="colour_pic_headings">High School of a biotechnological orientation (till 2009)</h2>
@@ -708,7 +709,7 @@
     </div>
     <div class="box">
       <div class="img_box">
-        <img src="Norge.png">
+        <img src="Norge.png" class="CV_picture_show">
       </div>
         <div class="details">
         <h2 class="colour_pic_headings">One-year Voluntary Community Service in Norway (till 2010)</h2>
@@ -717,7 +718,7 @@
     </div>
     <div class="box">
       <div class="img_box">
-        <img src="Bachelor.png">
+        <img src="Bachelor.png" class="CV_picture_show">
       </div>
          <div class="details">
         <h2 class="colour_pic_headings">Bachelor studies in Konstanz (from 2011 till 2015)</h2>
@@ -726,7 +727,7 @@
     </div>
     <div class="box">
       <div class="img_box">
-        <img src="CPG.png">
+        <img src="CPG.png" class="CV_picture_show">
       </div>
         <div class="details">
         <h2 class="colour_pic_headings">Internship at the German Center CPG in Bangkok</h2>
@@ -735,7 +736,7 @@
     </div>
     <div class="box">
       <div class="img_box">
-        <img src="JRS.png">
+        <img src="JRS.png" class="CV_picture_show">
       </div>
         <div class="details">
         <h2 class="colour_pic_headings">Caseworker for Refugees with the JRS in Bangkok (till November 2015)</h2>
@@ -744,7 +745,7 @@
     </div>
     <div class="box">
       <div class="img_box">
-        <img src="Caritas.png">
+        <img src="Caritas.png" class="CV_picture_show">
       </div>
         <div class="details">
         <h2 class="colour_pic_headings">Social Counselor for Refugees with Caritas in Germany (till June 2017)</h2>
@@ -753,7 +754,7 @@
     </div>
     <div class="box">
       <div class="img_box">
-        <img src="Aalto.png">
+        <img src="Aalto.png" class="CV_picture_show">
       </div>
         <div class="details">
         <h2 class="colour_pic_headings">CEMS Master Studies in Helsinki (from 2017 till 2020)</h2>
@@ -762,7 +763,7 @@
     </div>
     <div class="box">
       <div class="img_box">
-        <img src="CEMS_Santiago.png">
+        <img src="CEMS_Santiago.png" class="CV_picture_show">
       </div>
         <div class="details">
         <h2 class="colour_pic_headings">CEMS Exchange Studies in Santiago de Chile (Spring of 2019)</h2>
@@ -771,7 +772,7 @@
     </div>
     <div class="box">
       <div class="img_box">
-        <img src="AYU.png">
+        <img src="AYU.png" class="CV_picture_show">
       </div>
         <div class="details">
         <h2 class="colour_pic_headings">Today, a consultant in Germany, supporting companies in their efforts at digitalization</h2>
