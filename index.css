@@ -1,20 +1,18 @@
 html {
-	font: normal 100%/1.5 Georgia, sans-serif;
-	color: #373737;
+	font-family: Georgia, sans-serif;
+	color: #DDDDDD;
 }
 body {
 	background-color: #DDDDDD;
 }
 .headline {
-        font-family: 'Montserrat+Alternates', sans-serif;
         font-weight:900;
         letter-spacing: 0.045em;
         left: 50%;
         top: 32%;
-        background-color: rgba(0, 0, 0, .95);
+        background-color: rgba(0, 0, 0, .82);
         padding: 30px;
         font-size: 50px;
-        opacity: 0.85;
       }
 #resizing_1 {
     word-spacing: -3px;
@@ -30,10 +28,15 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
  }
+#resizing_2 {
+    margin-top: 20px;
+    padding-bottom: 8px;
+}
 #resizing_2, #resizing_3{
-    color: grey;
+    color: #B7B7B0;
     text-shadow: none;
-    font-family: 'Cardo'
+    font-family: 'Cardo';
+    line-height: 100%;
 }
 .center-screen {
  	position: absolute;
