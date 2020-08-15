@@ -109,13 +109,20 @@ header {
     line-height: 19px;
     text-align: justify;
 }
-#image_question {
+.image_question {
     position: relative;
     text-align: center;
     font-family: "Oswald", sans-serif;
-    word-spacing: -3px;
+    font-size: 40px;
     text-transform: uppercase;
-    font-size: 30px;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    margin: 0px;
+    padding: 0px;
+    line-height: 30px;
+}
+#stupid_div {
+    height: 10px;
 }
 #image_text {
     font-family: "Cardo", sans-serif;
@@ -255,7 +262,7 @@ h1 span {
     -webkit-transition: all 600ms ease;
     transition: all 600ms ease;
  }
- .btn span, .colour_text, .slideshow-container h1, .abbreviate, .no_abbreviate, #I_manage_2, #I_manage_1, .colour_pic_headings, #image_question, #follow_my_story {
+ .btn span, .colour_text, .slideshow-container h1, .abbreviate, .no_abbreviate, #I_manage_2, #I_manage_1, .colour_pic_headings, .image_question, #follow_my_story {
     background: rgb(255,130,130);
     background: -moz-linear-gradient(left,  rgba(178,119,0,1) 0%, rgba(156,105,0,1) 100%);
     background: -webkit-linear-gradient(left,  rgba(178,119,0,1) 0%,rgba(156,105,0,1) 100%);
@@ -796,28 +803,31 @@ h1 span {
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
-    height: 500px;
+    padding: 15px;
+    height: 600px;
     position: relative;
     background-color: rgba(0, 0, 0, .82);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
 }
 #contact_image_div {
     width: 40%;
-    padding-left: 3%;
     height: 100%;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    float: left;
+    overflow: hidden;
 }
 #contact_img {
-    width: auto;
-    height: 92%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    float: right;
 }
 #contact_text_div {
-    width: 50%;
+    width: 60%;
     height: 100%;
+    float: left;
+    justify-content: center;
 }
 #AYU_image {
     width: 230px;

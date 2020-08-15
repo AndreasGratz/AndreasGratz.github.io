@@ -32,8 +32,11 @@
     		#div_3 h1 {
     			font-size: 40px;
     		}
-        .rondelle_headings h1, #follow_my_story {
+        .rondelle_headings h1, #follow_my_story, .image_question {
             font-size: 36px;
+        }
+        .image_question {
+            line-height: 28px;
         }
     	}
     	@media screen and (max-width: 850px) {
@@ -50,8 +53,11 @@
     		#div_3 h1 {
     			font-size: 33px;
     		}
-        .rondelle_headings h1, #follow_my_story {
+        .rondelle_headings h1, #follow_my_story, .image_question {
           font-size: 31px;
+        }
+        .image_question {
+          line-height: 24px;
         }
     	}
     	@media screen and (min-width: 700px) {
@@ -78,8 +84,11 @@
     		#div_3 h1 {
     			font-size: 26px;
     		}
-        .rondelle_headings h1, #follow_my_story {
+        .rondelle_headings h1, #follow_my_story, .image_question {
           font-size: 24px;
+        }
+        .image_question {
+            line-height: 19px;
         }
         #my_story_heading_span {
         display: block;
@@ -107,10 +116,13 @@
     		.slideshow-container h4 {
     			font-size: 7px;
     		}
-        .rondelle_headings h1, #follow_my_story {
+        .rondelle_headings h1, #follow_my_story, .image_question {
           font-size: 22px;
           letter-spacing: 1px;
           word-spacing: 4px;
+        }
+        .image_question {
+          line-height: 16px;
         }
         #my_story_heading_span {
         font-size: 14px;
@@ -187,14 +199,9 @@
         margin-right: 0;
         height: 350px;
       }
-      #image_question {
-        font-size: 20px;
-        padding-left: 30px;
-      }
       #image_text {
         font-size: 15px;
         line-height: 18px;
-        padding-left: 30px;
       }
       #AYU_image {
         width: 160px;
@@ -219,6 +226,9 @@
 		}
     .nav {
       margin-left: -10px;
+    }
+    #stupid_div {
+      height: 5px;
     }
 		}
     </style>
@@ -787,8 +797,8 @@
     <img id="contact_img" src="contact_pic.jpg">
   </div>
   <div id="contact_text_div">
-    <h2 id="image_question">Why don't you reach out?!</h2>
-    <h3 id="image_text"><br><br>Contact Me <a style="font-weight: bold; text-decoration: underline; color: grey;" href="mailto:AndyMichaelG@gmail.com?subject=Mail Regarding Your Site">via Email</a><br><br><br>... or find me via my employer:<br><br>Go to:<a style="background-color: none;" href="https://www.ayudantes.de"><br><img id="AYU_image" src="Ayudantes.png"></a></h3>
+    <div style="text-align: center;"><span class="image_question">Why don't you</span><br><div id="stupid_div"></div><span class="image_question">Reach out?!</span></div>
+    <div style="text-align: center;"><h3 id="image_text"><br><br><br>Contact Me <a style="font-weight: bold; text-decoration: underline; color: grey;" href="mailto:AndyMichaelG@gmail.com?subject=Mail Regarding Your Site">via Email</a><br><br><br>... or find me via my employer:<br><br>Go to:<a style="background-color: none;" href="https://www.ayudantes.de"><br><img id="AYU_image" src="Ayudantes.png"></a></h3></div>
   </div>
 </div>
 
